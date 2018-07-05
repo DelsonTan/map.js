@@ -3,15 +3,9 @@ var input = [
   { x: 12, y: 5 },
   { x: 8, y: 15 }
 ];
+
 var result = input.map(function(xyPairs) {
-  var c = 0;
-
-  var a = xyPairs.x;
-  var b = xyPairs.y;
-
-  c = Math.sqrt(a * a + b * b);
-
-  return c;
+  return Math.sqrt(Math.pow(xyPairs.x,2) + Math.pow(xyPairs.y,2));
 })
 
 
